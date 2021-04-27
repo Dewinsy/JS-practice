@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+</head>
+<body>
+    <h1>Events in JS</h1>
+    <h2>Events in JS</h2>
+    <button onclick="changeColor()">Click to change background color!</button>
+    <p onmouseout="changeToPurple()" onmouseover="changeBack()">when you get your mouse away from me, I will change to purple:) <br>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam, praesentium. Reprehenderit ex voluptate labore numquam qui ratione architecto earum quae itaque eligendi dolorum ullam quos necessitatibus aliquam excepturi, repudiandae iste.<br>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias quo molestiae, possimus harum eius nobis. Dolorum nobis ipsum voluptatem velit error quae deserunt tempora? Odio distinctio corrupti velit ea</p>
+</body>
+<script>
+    function changeColor(){
+        document.querySelector("h1").style.backgroundColor="green";
+    }
+    function changeToPurple(){
+        document.querySelector("p").style.color="purple";
+    }
+    function changeBack(){
+        document.querySelector("p").style.color="green";
+    }
+</script>
+</html>
